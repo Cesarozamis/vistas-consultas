@@ -7,7 +7,85 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* spacing */
+
+table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid rgb(3, 14, 172);
+}
+
+thead th:nth-child(1) {
+  width: auto;
+}
+
+thead th:nth-child(2) {
+  width: auto;
+}
+
+thead th:nth-child(3) {
+  width: auto;
+}
+
+thead th:nth-child(4) {
+  width: auto;
+}
+
+th, td {
+  padding: auto;
+}
+/* typography */
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Times New Roman', Times, serif, cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+  height: auto;
+}
+/*graficos y colores*/
+thead, tfoot {
+  background: url(leopardskin.jpg);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid rgb(26, 9, 180);
+}
+
+/*Rayas de cebra*/
+tbody tr:nth-child(odd) {
+  background-color: #13a0ca;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #257ae9;
+}
+
+tbody tr {
+  background-image: url(noise.png);
+}
+
+table {
+  background-color: #0f508d;
 }
